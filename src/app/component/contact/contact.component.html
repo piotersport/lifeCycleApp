@@ -1,1 +1,27 @@
-<p>516 298 846, pioterofficjal@gmail.com, Łódź</p>
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Ja</a>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body" >
+            <h5 class="card-title">Włostek Piotr</h5>
+            <h6 class="card-subtitle mb-2 text-muted">516-298-846</h6>
+            <h6 class="card-subtitle mb-2 text-muted">pioterofficjal@gmail.com</h6>
+            <p class="card-text">Telefoniczna 23J m.26, 91-728, Łódź, Polska</p>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="isHidden = !isHidden">Zdjęcie pieska</a>
+        <img *ngIf="isHidden" src="assets/piesek.jpg" class="img-fluid" alt="Responsive image">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Zdjęcie kotka</a>
+        <img src="assets/kotek.jpg" class="img-fluid" alt="Responsive image">
+      </li>
+    </ul>
+  </div>
+</div>
+
+
